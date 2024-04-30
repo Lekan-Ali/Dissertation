@@ -32,8 +32,6 @@ Credit %>%
 
 
 
-
-
 #Step 4: Fit credit Rating on credit Balance using linear model
 # see Figure 3.3 or Fig 3.4 in Dissertation or see Figure "least_squares_plot.png" in Chapter 3 folder of this project
 lm.simple <- lm(Balance ~ Rating, data = Credit)
@@ -43,9 +41,7 @@ summary(lm.simple)
 
 
 
-
-
-#Step 5:
+#Step 5: Two plots side by side. One plot shows the relationship between Balance and rating, second plot shows when a linear fit is applied to the relationship
 # see Figure 3.4 in Dissertation in the Figures folder in Chapter 3 folder of this project
 p1 <- Credit %>% 
   ggplot(aes(Rating, Balance)) +
@@ -67,11 +63,3 @@ p2 <- Credit %>%
 
 
 grid.arrange(p1, p2, ncol = 2)
-
-
-
-
-
-
-#Step 6: Multiple linear regression Model
-# see Figure 3.4 in Dissertation in the Figures folder in Chapter 3 folder of this project
