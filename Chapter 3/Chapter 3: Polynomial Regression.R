@@ -45,3 +45,9 @@ lines(Credit$Rating[ix], pred[ix], col = "red", lwd = 2
 #linear regression line in blue
 abline(lm.simple, col = "blue", lwd = 2
        , lty = 1)
+
+
+
+
+
+
